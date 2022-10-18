@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <title>Document</title>
+        <style>
+            .block {
+                margin-top: 10px;
+                margin-bottom: 10px
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <h1 v-bind:id="dynamicId">{{message}}</h1>
+            <a :href="url" :alt="helloworld">this should be google</a>
+
+            <div class="block"></div>
+
+            <button v-bind="buttonAttributes">This is my button {{message}}</button>
+            <div class="block"></div>
+
+            <span v-bind="spanAttributes">{{number + 1}}</span>
+
+            <div class="block"></div>
+
+            <p v-if="seen">Hello world :: {{message}}</p>
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
