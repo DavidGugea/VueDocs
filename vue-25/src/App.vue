@@ -3,7 +3,7 @@
         <button @click="show = !show">Toggle</button>
 
         <Transition name="bounce" type="animation">
-            <p v-if="show" style="text-align: center;">Hello, here is some bounce text!</p>
+            <p v-if="show" style="text-align: center">Hello, here is some bounce text!</p>
         </Transition>
     </div>
 </template>
